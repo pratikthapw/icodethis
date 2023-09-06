@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-[#32244E]">
+    <!-- top nav bar -->
+    <header>
+      <nav class="bg-[#2B1D48] p-12"></nav>
+    </header>
+
+    <!-- Bell Icon -->
+    <div>
+      <span
+        class="bg-[#2B1D48] p-3 border border-red-300 rounded-full absolute top-[12%] left-[70%]"
+      >
+        🔔
+      </span>
+    </div>
+    <!-- Main Card -->
+    <main
+      class="flex flex-col gap-y-4 w-11/12 sm:w-6/12 lg:w-4/12 mt-10 mx-auto bg-[#3D2E5C] shadow-lg text-[#555984]"
+    >
+      <h3 class="uppercase text-xs pl-4 pt-4">Notifications</h3>
+      <!-- notification details -->
+      <div
+        id="noti-details"
+        class="flex flex-col space-y-4 p-4 h-96 overflow-auto bg-[#392A57]"
+      ></div>
+      <!-- View more / less -->
+      <button
+        id="view"
+        class="uppercase text-[#FD356E] hover:underline text-xs font-medium pb-3"
+      >
+        View More
+      </button>
+    </main>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
