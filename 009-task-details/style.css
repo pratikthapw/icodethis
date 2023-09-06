@@ -1,0 +1,6 @@
+.datepicker::-webkit-calendar-picker-indicator {
+  height: 20px;
+  aspect-ratio: 1/1;
+  filter: invert(40%) sepia(86%) saturate(2584%) hue-rotate(206deg)
+    brightness(105%) contrast(93%);
+}

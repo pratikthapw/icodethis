@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto+Mono:wght@200;300;400;500;600;700&display=swap");
+* {
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto Mono", monospace;
+}
+body {
+  background: rgb(94, 0, 255);
+  background: -moz-radial-gradient(
+    circle,
+    rgba(94, 0, 255, 0.9808298319327731) 24%,
+    rgba(2, 3, 36, 1) 30%,
+    rgba(2, 0, 36, 1) 33%
+  );
+  background: -webkit-radial-gradient(
+    circle,
+    rgba(94, 0, 255, 0.9808298319327731) 24%,
+    rgba(2, 3, 36, 1) 30%,
+    rgba(2, 0, 36, 1) 33%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(94, 0, 255, 0.9808298319327731) 24%,
+    rgba(2, 3, 36, 1) 30%,
+    rgba(2, 0, 36, 1) 33%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5e00ff", endColorstr="#020024", GradientType=1);
+}

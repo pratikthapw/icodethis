@@ -1,0 +1,133 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body
+    class="h-full bg-gradient-to-r from-pink-400 to-blue-500 flex flex-col mx-2 items-center justify-center gap-y-2 sm:gap-y-6 mt-6 sm:mt-3"
+  >
+    <header
+      class="flex gap-x-2 items-center justify-between w-11/12 sm:w-9/12 md:w-8/12"
+    >
+      <div class="text-center relative">
+        <button class="bg-yellow-400 p-1 rounded-full ring-4 ring-purple-500">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-user"
+            width="36"
+            height="36"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="#2c3e50"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+            <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+          </svg>
+          <button class="bg-white rounded-full absolute top-[-5%] right-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-check"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              stroke-width="3"
+              stroke="#2c3e50"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M5 12l5 5l10 -10" />
+            </svg>
+          </button>
+        </button>
+        <p class="text-white text-xs font-semibold mt-2">Create account</p>
+      </div>
+
+      <span class="w-16 sm:w-20 mb-8 h-0.5 bg-purple-600/50 shadow-lg"></span>
+
+      <div class="text-center">
+        <button class="bg-yellow-400 p-1 rounded-full ring-4 ring-purple-500">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-camera"
+            width="36"
+            height="36"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="#2c3e50"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M5 7h1a2 2 0 0 0 2 -2a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1a2 2 0 0 0 2 2h1a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-9a2 2 0 0 1 2 -2"
+            />
+            <path d="M9 13a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+          </svg>
+        </button>
+        <p class="text-white text-xs font-semibold mt-2">Set your Interests</p>
+      </div>
+
+      <span class="w-16 sm:w-20 mb-8 h-0.5 bg-purple-600/50 shadow-lg"></span>
+
+      <div class="text-center">
+        <button
+          class="bg-purple-700/40 p-1 rounded-full ring-4 ring-purple-500"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-users-group"
+            width="36"
+            height="36"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="#2c3e50"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M10 13a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+            <path d="M8 21v-1a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v1" />
+            <path d="M15 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+            <path d="M17 10h2a2 2 0 0 1 2 2v1" />
+            <path d="M5 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+            <path d="M3 13v-1a2 2 0 0 1 2 -2h2" />
+          </svg>
+        </button>
+        <p class="text-white text-xs font-semibold mt-2">
+          Customize your Profile
+        </p>
+      </div>
+    </header>
+
+    <main class="bg-white w-full sm:w-10/12 md:w-9/12">
+      <section class="my-6 mx-4">
+        <h3 class="font-semibold text-center text-lg text-slate-600">
+          Choose your interests
+        </h3>
+
+        <ul
+          id="renderInterest"
+          class="my-6 grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 gap-y-4 justify-items-center"
+        ></ul>
+
+        <button
+          class="mt-8 bg-gray-200 text-center block w-3/12 mx-auto py-2 px- rounded-full font-semibold text-slate-600 hover:bg-gray-300"
+        >
+          Next &rarr;
+        </button>
+      </section>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
