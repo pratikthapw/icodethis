@@ -1,0 +1,128 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/bb61d5d7bb.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#2D3E50] text-[#6E757F]">
+    <div class="grid gap-y-2 sm:gap-2 grid-cols-3 text-xs mx-auto my-10 px-2">
+      <!-- nav bar -->
+      <header class="col-span-full">
+        <nav class="flex bg-slate-100 justify-between rounded-lg">
+          <ul class="p-4 uppercase flex gap-x-2 text-[#6E757F]">
+            <li>Home</li>
+            <li>About</li>
+            <li class="border-b-4 border-[#18BB9C]">Works</li>
+            <li>Support</li>
+            <li>Contact</li>
+          </ul>
+          <label class="flex gap-x-2 bg-slate-50 rounded-lg text-sm">
+            <i
+              class="fa-solid fa-magnifying-glass self-center text-[#6E757F] ml-2"
+            ></i>
+            <input
+              type="text"
+              placeholder=" Search"
+              class="rounded-lg focus:outline-none bg-transparent w-32"
+            />
+          </label>
+        </nav>
+      </header>
+      <!-- form  -->
+      <main class="col-span-full bg-slate-100 h-96 rounded-lg">
+        <div class="grid grid-cols-2">
+          <div class="hidden col-span-1">
+            <img
+              src="./images/formForest.jpg"
+              alt="forest"
+              class="w-full h-96 object-cover rounded-s-lg"
+            />
+            <div class="text-red-500">
+              <p class="font-semibold text-sm">Aliquam etiam</p>
+              <p>
+                nulla, mesus, mollis pulvinar<br />
+                saplam arset sit eget.
+              </p>
+            </div>
+          </div>
+
+          <form class="p-4">
+            <fieldset class="flex flex-col gap-y-2">
+              <legend class="uppercase text-center mb-4 font-semibold">
+                Sign in
+              </legend>
+
+              <label class="rounded-lg flex gap-x-2 items-center bg-white p-2">
+                <i class="fa-regular fa-envelope text-[#18BB9C] text-base"></i>
+                <input
+                  type="email"
+                  placeholder="Email"
+                  class="bg-transparent focus:outline-none"
+                />
+              </label>
+
+              <label class="rounded-lg flex gap-x-2 items-center bg-white p-2">
+                <i class="fa-solid fa-lock text-[#18BB9C] text-base"></i>
+                <input
+                  type="password"
+                  placeholder="Password"
+                  class="bg-transparent focus:outline-none"
+                />
+              </label>
+              <label class="flex gap-x-2 items-center mb-2">
+                <input type="checkbox" class="" />
+                <span class="font-medium"> Remember Me </span>
+              </label>
+
+              <button
+                type="submit"
+                class="bg-[#18BB9C] text-white text-sm p-2 rounded-lg mb-2"
+              >
+                Sign in
+              </button>
+            </fieldset>
+
+            <div class="flex justify-between font-medium mb-4">
+              <span> Create Account </span>
+              <span> Forgot password? </span>
+            </div>
+
+            <p class="text-center text-sm text-gray-400 mb-4">
+              or connect with
+            </p>
+
+            <button
+              class="w-full p-2 rounded-lg text-sm text-white font-light bg-blue-700 hover:bg-blue-800 mb-2"
+            >
+              Facebook
+            </button>
+
+            <button
+              class="w-full p-2 rounded-lg text-sm text-white font-light bg-red-600 hover:bg-red-700"
+            >
+              Gmail
+            </button>
+          </form>
+        </div>
+      </main>
+
+      <!-- calendar -->
+      <aside
+        class="hidden bg-slate-100 md:col-start-3 md:col-end-4 col-span-full"
+      >
+        <div class="relative w-full h-44 bg-no-repet" id="cal-image">
+          <div class="text-slate-50 text-center pt-16">
+            <h3 class="text-5xl font-medium">3</h3>
+            <p class="uppercase font-normal mb-5">friday</p>
+            <p class="tracking-wide">&lt; &nbsp; March 2023 &nbsp; &gt;</p>
+          </div>
+        </div>
+      </aside>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
