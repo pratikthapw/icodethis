@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Car Interface</title>
+  </head>
+  <body
+    class="h-screen w-screen bg-gray-950 text-sm font-light text-slate-600 uppercase"
+  >
+    <div class="flex flex-col my-5 items-center gap-y-12">
+      <header class="">
+        <nav>
+          <ul class="flex gap-x-16">
+            <li>Settings</li>
+            <li>Navigation</li>
+            <li class="text-yellow-600">Phone</li>
+            <li>Music</li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="flex items-center flex-col gap-y-4">
+        <div class="grid [&>*]:col-span-full [&>*]:row-span-full">
+          <img
+            src="https://i.pravatar.cc/100?img=3"
+            alt="headshot of man"
+            class="rounded-full border border-white ring-4 ring-slate-800"
+          />
+          <button
+            class="text-slate-200/50 bg-gray-900/60 rounded-full grid place-items-center"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="rotate-[270deg] icon icon-tabler icon-tabler-phone-filled"
+              width="48"
+              height="48"
+              viewBox="0 0 24 24"
+              stroke-width=""
+              stroke=""
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M9 3a1 1 0 0 1 .877 .519l.051 .11l2 5a1 1 0 0 1 -.313 1.16l-.1 .068l-1.674 1.004l.063 .103a10 10 0 0 0 3.132 3.132l.102 .062l1.005 -1.672a1 1 0 0 1 1.113 -.453l.115 .039l5 2a1 1 0 0 1 .622 .807l.007 .121v4c0 1.657 -1.343 3 -3.06 2.998c-8.579 -.521 -15.418 -7.36 -15.94 -15.998a3 3 0 0 1 2.824 -2.995l.176 -.005h4z"
+                stroke-width="0"
+                fill="currentColor"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <h3 class="uppercase tracking-wide">Robert is calling</h3>
+        <div
+          class="divide-x divide-slate-700 bg-gray-900 rounded-sm text-yellow-600"
+        >
+          <button class="uppercase p-2 hover:bg-gray-600">accept</button>
+          <button class="uppercase p-2 hover:bg-gray-600">decline</button>
+        </div>
+      </section>
+
+      <main>
+        <div
+          class="relative rounded-full h-64 aspect-square border-2 border-dotted border-slate-400"
+        >
+          <div class="absolute h-5 w-0.5 bg-slate-300 top-0 left-32"></div>
+          <div
+            class="absolute h-2 w-0.5 bg-slate-500 top-0 left-28 translate-x-1"
+          ></div>
+          <div
+            class="absolute h-2 w-0.5 bg-slate-500 top-0 left-24 translate-x-1"
+          ></div>
+          <div
+            class="absolute h-2 w-0.5 bg-slate-500 top-0 left-20 translate-x-1 translate-y-1.5"
+          ></div>
+        </div>
+      </main>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
